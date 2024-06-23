@@ -1,9 +1,7 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.4.4"
-  },
-  "name": "jeffkitson",
+  "name": "jeffkitson1",
   "version": "1.0.0",
+  "description": "",
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,8 +10,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "color-name": "^2.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
   }
 }

@@ -62,3 +62,37 @@
 .imgh {
   will-change: transform, opacity;
 }
+
+.form_field {
+  color: #fff;
+  background-color: #0b2340;
+  font-weight: 600;
+  margin-bottom: 10px; /* Standardized margin-bottom */
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  padding: 8px 12px; /* Standardized padding */
+  font-size: 14px;
+  line-height: 1.42857;
+  padding-left: 0px;
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  height: 38px; /* Standardized height */
+}
+
+.form_field:focus {
+  outline: none;
+  background-color: #0b2340; /* Keeps the background color on focus */
+  border: none; /* Removes border on focus */
+  color: #fff;
+}
+
+.form_field_line {
+  background-color: #fff;
+  width: 100%;
+  /* margin-bottom: 4rem; */
+  height: 1px;
+}
+.form_field::placeholder {
+  color: #ffffff; 
+}
