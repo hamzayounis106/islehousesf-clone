@@ -104,16 +104,16 @@ function preloadImages(imageUrls) {
 
 // Array of images to preload
 const imagesToPreload = [
-  "../public/Images/6659d27197bbdb3a904d1efa_Web__0000_DB001_0025126_VIEW_11_BEDROOM_Vertical.webp",
-  "../public/Images/665909aa19c56b4460baa8c0_Web__0005_DB001_0025121_VIEW_06_ROOFTOP_Vertical.jpg",
-  "../public/Images/66590ba9e40bcd0472c9cd3c_Web__0005_TreasureIsland-0095_Vertical.webp",
-  "../public/Images/6628f0a8ed906aa70de8d566_TreasureIsland-0361_1800x1200.webp",
-  "../public/Images/6628f088184fbbacf3648728_DB001_0025117_VIEW 02 - CO-WORKING SPACE_1_1800x1800.webp",
-  "../public/Images/6650b4e8d6b78c6d32c0c3fb_2021-10-19_TIDG_TI_KR5_7955.webp",
-  "../public/Images/6628f0df7929bf37495cd719_TidalHouseViews_062823_Tower-West_03-High_2000x800.webp",
-  "../public/Images/6628f05e5d10aa70347db0bd_HH014_0024043_VIEW_03_FINALLENS CORRECTION_1800x1425.webp",
-  "../public/Images/6628f10e8c37d6f182e941c7_TreasureIsland-0948_1800x1200.webp",
-  "../public/Images/6628f0f984ce6a2b2c021229_TreasureIsland-0095_1800x2700.webp",
+  "./public/Images/6659d27197bbdb3a904d1efa_Web__0000_DB001_0025126_VIEW_11_BEDROOM_Vertical.webp",
+  "./public/Images/665909aa19c56b4460baa8c0_Web__0005_DB001_0025121_VIEW_06_ROOFTOP_Vertical.jpg",
+  "./public/Images/66590ba9e40bcd0472c9cd3c_Web__0005_TreasureIsland-0095_Vertical.webp",
+  "./public/Images/6628f0a8ed906aa70de8d566_TreasureIsland-0361_1800x1200.webp",
+  "./public/Images/6628f088184fbbacf3648728_DB001_0025117_VIEW 02 - CO-WORKING SPACE_1_1800x1800.webp",
+  "./public/Images/6650b4e8d6b78c6d32c0c3fb_2021-10-19_TIDG_TI_KR5_7955.webp",
+  "./public/Images/6628f0df7929bf37495cd719_TidalHouseViews_062823_Tower-West_03-High_2000x800.webp",
+  "./public/Images/6628f05e5d10aa70347db0bd_HH014_0024043_VIEW_03_FINALLENS CORRECTION_1800x1425.webp",
+  "./public/Images/6628f10e8c37d6f182e941c7_TreasureIsland-0948_1800x1200.webp",
+  "./public/Images/6628f0f984ce6a2b2c021229_TreasureIsland-0095_1800x2700.webp",
 ];
 
 // Preload images
@@ -304,11 +304,11 @@ function startAnimation() {
   });
 }
 const image1 =
-  "../public/Images/6659d27197bbdb3a904d1efa_Web__0000_DB001_0025126_VIEW_11_BEDROOM_Vertical.webp";
+  "./public/Images/6659d27197bbdb3a904d1efa_Web__0000_DB001_0025126_VIEW_11_BEDROOM_Vertical.webp";
 const image2 =
-  "../public/Images/665909aa19c56b4460baa8c0_Web__0005_DB001_0025121_VIEW_06_ROOFTOP_Vertical.jpg";
+  "./public/Images/665909aa19c56b4460baa8c0_Web__0005_DB001_0025121_VIEW_06_ROOFTOP_Vertical.jpg";
 const image3 =
-  "../public/Images/66590ba9e40bcd0472c9cd3c_Web__0005_TreasureIsland-0095_Vertical.webp";
+  "./public/Images/66590ba9e40bcd0472c9cd3c_Web__0005_TreasureIsland-0095_Vertical.webp";
 
 let parentAccordation = document.querySelectorAll(".parent");
 let childAccordation = document.querySelectorAll(".child");
