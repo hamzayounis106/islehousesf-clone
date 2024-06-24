@@ -94,5 +94,11 @@
   height: 1px;
 }
 .form_field::placeholder {
-  color: #ffffff; 
+  color: #ffffff;
+}
+.menuItem {
+ overflow: hidden;
+ opacity: 0;
+ height: 0;
+ cursor: pointer;
 }

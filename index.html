@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
     />
-    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./src/output.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
@@ -19,7 +19,63 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="bg-[#F7F4F1]">
+    <div id="sideBar"
+      class="h-screen w-[35%] bg-[#F96339] absolute top-0 z-[1200] flex flex-col justify-between items-start p-9 translate-x-[-100%]"
+    >
+      <div class="flex items-center justify-between w-full">
+        <img
+          src="./public/Images/menuL.svg"
+          class="w-[60px] cursor-pointer"
+          alt=""
+        />
+        <i id="navButtonClose"
+          class="ri-close-line text-[#f7f4f1] text-[2rem] font-light cursor-pointer"
+        ></i>
+      </div>
+      <div class="flex flex-col items-start justify-start">
+        <p class=" menuItem">
+          <span
+            class="text-[#F7F4F1] text-5xl !font-extralight subItem  p2 opacity-[0.8]"
+          >
+            Residences
+          </span>
+        </p>
+        <div class="nav_menu_line bg-[#F7F4F1] w-[0] h-[1px]"></div>
+        <p class="mt-8 menuItem">
+          <span
+            class="text-[#F7F4F1] text-5xl !font-extralight  p2 subItem opacity-[0.8]"
+          >
+            Amenities
+          </span>
+        </p>
+        <div class="nav_menu_line bg-[#F7F4F1] w-[0] h-[1px]"></div>
+        <p class="mt-8 menuItem">
+          <span
+            class="text-[#F7F4F1] text-5xl !font-extralight  p2 subItem opacity-[0.8]"
+          >
+            Location
+          </span>
+        </p>
+        <div class="nav_menu_line bg-[#F7F4F1] w-[0] h-[1px]"></div>
+        <p class="mt-8 menuItem">
+          <span
+            class="text-[#F7F4F1] text-5xl !font-extralight  p2 subItem opacity-[0.8]"
+          >
+            Gallery
+          </span>
+        </p>
+        <div class="nav_menu_line bg-[#F7F4F1] w-[0] h-[1px]"></div>
+        <p class="mt-8 menuItem">
+          <span
+            class="text-[#F7F4F1] text-5xl !font-extralight  p2 subItem opacity-[0.8]"
+          >
+            Contact
+          </span>
+        </p>
+        <div class="nav_menu_line bg-[#F7F4F1] w-[0] h-[1px]"></div>
+      </div>
+    </div>
     <!-- Loader -->
     <div
       class="fixed inset-0 flex items-center justify-center bg-white loader z-[2000]"
@@ -28,11 +84,11 @@
       <div id="loader"></div>
     </div>
     <div
-      class="absolute top-0 flex flex-row items-center justify-center w-full overflow-hidden p-9 pt-4 z-[1000] bg-[#F7F4F1]"
+      class="absolute top-0 flex flex-row items-center justify-center w-full overflow-hidden pt-4 z-[1000] bg-[#F7F4F1] p-8"
     >
       <div class="flex-1 header1">
-        <i
-          class="ri-menu-line text-[#F96339] p-1 border-2 border-[#F96339] text-xl font-light rounded hover:bg-[#F96339] hover:text-white transition-all ease-in-out duration-200 cursor-pointer "
+        <i id="navButtonOpen"
+          class="ri-menu-line text-[#F96339] p-1 border-2 border-[#F96339] text-xl font-light rounded hover:bg-[#F96339] hover:text-white transition-all ease-in-out duration-200 cursor-pointer"
         ></i>
         <span
           class="text-[#F96339] font-bold text-[1rem] p2 uppercase text-left mb-2 ml-3"
@@ -40,7 +96,7 @@
         >
       </div>
       <div class="flex justify-center flex-1">
-        <img src="../public/Images/logoT.svg" class="w-[200px]" alt="" />
+        <img src="./public/Images/logoT.svg" class="w-[200px]" alt="" />
       </div>
       <div class="flex items-center justify-end flex-1">
         <p
@@ -75,37 +131,37 @@
       <div class="h-full w-full absolute top-0 z-[20] overflow-hidden">
         <img
           id="himg1"
-          src="../public/Images/6628f0a8ed906aa70de8d566_TreasureIsland-0361_1800x1200.webp"
+          src="./public/Images/6628f0a8ed906aa70de8d566_TreasureIsland-0361_1800x1200.webp"
           class="absolute imgh top-[20%] right-[15%] z-[21] w-[200px]"
         />
         <img
           id="himg2"
-          src="../public/Images/6628f088184fbbacf3648728_DB001_0025117_VIEW 02 - CO-WORKING SPACE_1_1800x1800.webp"
+          src="./public/Images/6628f088184fbbacf3648728_DB001_0025117_VIEW 02 - CO-WORKING SPACE_1_1800x1800.webp"
           class="absolute imgh top-[12%] right-[27%] z-[22] w-[380px]"
         />
         <img
           id="himg3"
-          src="../public/Images/6650b4e8d6b78c6d32c0c3fb_2021-10-19_TIDG_TI_KR5_7955.webp"
+          src="./public/Images/6650b4e8d6b78c6d32c0c3fb_2021-10-19_TIDG_TI_KR5_7955.webp"
           class="absolute imgh top-[30%] right-[13%] z-[23] w-[330px]"
         />
         <img
           id="himg4"
-          src="../public/Images/6628f0df7929bf37495cd719_TidalHouseViews_062823_Tower-West_03-High_2000x800.webp"
+          src="./public/Images/6628f0df7929bf37495cd719_TidalHouseViews_062823_Tower-West_03-High_2000x800.webp"
           class="absolute imgh top-[61%] right-[11%] z-[24] w-[793px] h-[200px]"
         />
         <img
           id="himg5"
-          src="../public/Images/6628f05e5d10aa70347db0bd_HH014_0024043_VIEW_03_FINALLENS CORRECTION_1800x1425.webp"
+          src="./public/Images/6628f05e5d10aa70347db0bd_HH014_0024043_VIEW_03_FINALLENS CORRECTION_1800x1425.webp"
           class="absolute imgh top-[20%] left-[18%] z-[25] w-[500px]"
         />
         <img
           id="himg6"
-          src="../public/Images/6628f10e8c37d6f182e941c7_TreasureIsland-0948_1800x1200.webp"
+          src="./public/Images/6628f10e8c37d6f182e941c7_TreasureIsland-0948_1800x1200.webp"
           class="absolute imgh top-[64%] left-[20%] z-[26] w-[300px]"
         />
         <img
           id="himg7"
-          src="../public/Images/6628f0f984ce6a2b2c021229_TreasureIsland-0095_1800x2700.webp"
+          src="./public/Images/6628f0f984ce6a2b2c021229_TreasureIsland-0095_1800x2700.webp"
           class="absolute imgh bottom-[-8%] left-[28%] z-[27] w-[160px]"
         />
       </div>
@@ -115,7 +171,7 @@
     >
       <div class="w-[42rem] flex flex-col justify-center items-center gap-4">
         <img
-          src="../public/Images/Hlogo.svg"
+          src="./public/Images/Hlogo.svg"
           class="w-[3.75rem] text-[#003087] fadeup"
           alt=""
         />
@@ -139,7 +195,7 @@
       <div class="relative top-0 w-full bg-white h-1/2"></div>
       <div class="w-full bg-[#F9CEA8] h-1/2 absolute bottom-0"></div>
       <img
-        src="../public/Images/6651eb0612b3da23b72aa304_IsleHouse_TreasureIsland.webp"
+        src="./public/Images/6651eb0612b3da23b72aa304_IsleHouse_TreasureIsland.webp"
         class="object-cover w-full circleimg"
         alt="6651eb0612b3da23b72aa304_IsleHouse_TreasureIsland"
       />
@@ -213,7 +269,7 @@
       </div>
       <div class="w-1/2 h-full overflow-hidden bg-white">
         <img
-          src="../public/Images/6659d27197bbdb3a904d1efa_Web__0000_DB001_0025126_VIEW_11_BEDROOM_Vertical.webp"
+          src="./public/Images/6659d27197bbdb3a904d1efa_Web__0000_DB001_0025126_VIEW_11_BEDROOM_Vertical.webp"
           class="object-cover w-full h-full"
           id="imageAcc"
           alt=""
@@ -225,14 +281,14 @@
     >
       <div class="absolute top-0 w-full h-full">
         <img
-          src="../public/Images/662cefd284c7f360e059bc3c_BKV-Aerials_091421-0007_2000x1333.webp"
+          src="./public/Images/662cefd284c7f360e059bc3c_BKV-Aerials_091421-0007_2000x1333.webp"
           class="object-cover w-full h-full z-[30]"
           alt=""
         />
       </div>
       <div class="absolute bottom-0 w-[80%] h-[80%]" id="overImage">
         <img
-          src="../public/Images/662cf95e17ecacf18a9f8e4b_TI_YBI-Ferry_021022-006 (1).jpg"
+          src="./public/Images/662cf95e17ecacf18a9f8e4b_TI_YBI-Ferry_021022-006 (1).jpg"
           class="object-cover w-full h-full z-[40]"
           alt=""
         />
@@ -279,33 +335,35 @@
       ></div>
       <img
         id="dotImg"
-        src="../public/Images/fade.svg"
+        src="./public/Images/fade.svg"
         class="w-[140px] z-[500] absolute top-[46%] left-[30%] opacity-0"
         alt=""
       />
       <img
-        src="../public/Images/66561ee36a53ed717a894e58_IsleHouse_LocatorMapNoLogo.webp"
+        src="./public/Images/66561ee36a53ed717a894e58_IsleHouse_LocatorMapNoLogo.webp"
         class="object-cover h-full w-full z-[400]"
         alt=""
       />
     </div>
 
     <div
-
-      class="  h-[160vh] w-full bg-[#0B2340] flex flex-col justify-center items-center"
+      class="h-[160vh] w-full bg-[#0B2340] flex flex-col justify-center items-center"
     >
-      <div   
-        class=" h-full w-[50%] bg-[#0B2340] flex flex-col justify-center items-center"
+      <div
+        class="h-full w-[50%] bg-[#0B2340] flex flex-col justify-center items-center"
       >
         <h2 class="mb-6 text-6xl font-thin text-center text-white">
           Be the first<br />
           to know.
         </h2>
-        <p   id="formContainer"  class="text-[1.01rem] text-white text-center p2 font-semibold">
+        <p
+          id="formContainer"
+          class="text-[1.01rem] text-white text-center p2 font-semibold"
+        >
           We invite you to register below and we’ll be in touch with exclusive
           updates and announcements about pre-leasing opportunities.
         </p>
-        <form   action="#" class="items-center w-full formContainer mt-7">
+        <form action="#" class="items-center w-full formContainer mt-7">
           <input
             class="form_field"
             maxlength="256"
@@ -367,7 +425,7 @@
       class="w-full h-[70vh] bg-[#F7F4F1] p-9 flex flex-row justify-center items-end"
     >
       <div class="w-[40%] flex flex-col items-baseline justify-end">
-        <img src="../public/Images/logoft.svg" class="w-[160px]" alt="" />
+        <img src="./public/Images/logoft.svg" class="w-[160px]" alt="" />
         <div class="flex flex-row w-full gap-8">
           <div class="flex flex-col items-baseline mt-7">
             <p class="text-[#003087] text-[1.07rem] p2 m-0">39 Bruton Street</p>
@@ -394,9 +452,9 @@
         class="w-[60%] flex flex-col items-baseline justify-end text-[#003087]"
       >
         <div class="flex flex-row justify-end w-full gap-8">
-          <img src="../public/Images/greystar.svg" class="w-[150px]" alt="" />
-          <img src="../public/Images/real.svg" class="w-[2rem]" alt="" />
-          <img src="../public/Images/wheelChair.svg" class="w-[2rem]" alt="" />
+          <img src="./public/Images/greystar.svg" class="w-[150px]" alt="" />
+          <img src="./public/Images/real.svg" class="w-[2rem]" alt="" />
+          <img src="./public/Images/wheelChair.svg" class="w-[2rem]" alt="" />
         </div>
         <div class="flex flex-row justify-end w-full mt-4">
           <div class="flex justify-end w-full gap-3 p2">
@@ -427,5 +485,5 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-  <script src="./script.js"></script>
+  <script src="./src/script.js"></script>
 </html>

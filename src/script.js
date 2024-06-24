@@ -1,5 +1,88 @@
 const dot = document.querySelector("#dot");
 const dotImg = document.querySelector("#dotImg");
+const navButtonOpen = document.querySelector("#navButtonOpen");
+const navButtonClose = document.querySelector("#navButtonClose");
+const sideBar = document.querySelector("#sideBar");
+// const subItems = document.querySelectorAll(".subItem");
+const subItems = Array.from(document.querySelectorAll(".subItem")); // Ensure subItems is an array
+const menuLines = Array.from(document.querySelectorAll(".nav_menu_line")); // Select all nav_menu_line elements and convert to array
+
+subItems.forEach((subItem, index) => {
+  subItem.addEventListener("mouseenter", () => {
+    gsap.to(menuLines[index], {
+      width: "100%",
+      duration: 0.5,
+      ease: "power2.inOut",
+    });
+  });
+
+  subItem.addEventListener("mouseleave", () => {
+    gsap.to(menuLines[index], {
+      width: "0%",
+      duration: 0.5,
+      ease: "power2.inOut",
+    });
+  });
+});
+// Disable scrolling
+function disableScroll() {
+  document.body.style.overflowY = "hidden";
+}
+
+// Enable scrolling
+function enableScroll() {
+  document.body.style.overflowY = "";
+}
+navButtonOpen.addEventListener("click", () => {
+  disableScroll();
+  console.log("clicked");
+  gsap.to(sideBar, {
+    delay: 0.5,
+    duration: 0.5,
+    x: 0,
+    ease: "power2.inOut",
+  });
+  gsap.fromTo(
+    ".menuItem",
+    { height: -20, opacity: 0 , duration:0},
+    {
+      opacity: 1,
+      stagger: -0.5,
+      height: 45,
+      duration: 0.5,
+      ease: "power4.inOut",
+    },
+    "<"
+  );
+});
+//   gsap.from(".menuItem", {
+//     delay: 1,
+//     y: 20,
+//     opacity: 0,
+//     stagger: 0.5,
+//     duration: 0.5,
+//     // ease: "power2.inOut",
+//   });
+// });
+navButtonClose.addEventListener("click", () => {
+  enableScroll();
+  console.log("clicked");
+  gsap.to(navButtonClose, {
+    rotate: -70,
+    duration: 0.5,
+    ease: "power2.inOut",
+  });
+  gsap.to(sideBar, {
+    delay: 0.5,
+    duration: 0.5,
+    x: "-100%",
+    ease: "power2.inOut",
+    onComplete: () => {
+      gsap.set(navButtonClose, { rotate: 0 });
+    },
+  });
+});
+
 let dotVisible = 0;
 
 dot.addEventListener("click", () => {
@@ -82,9 +165,8 @@ function startAnimation() {
     ease: "power2.inOut",
     stagger: 0.2,
     borderRadius: "0%",
-
-    // willChange: 'transform' ,
-    // force3D: false
+    onStart: disableScroll,
+    onComplete: enableScroll,
   });
   let tl = gsap.timeline({
     scrollTrigger: {
