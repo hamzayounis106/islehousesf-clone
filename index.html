@@ -20,8 +20,9 @@
     />
   </head>
   <body class="bg-[#F7F4F1]">
-    <div id="sideBar"
-      class="h-screen w-[35%] bg-[#F96339] absolute top-0 z-[1200] flex flex-col justify-between items-start p-9 translate-x-[-100%]"
+    <div
+      id="sideBar"
+      class="h-screen w-full lg:w-[35%] bg-[#F96339] absolute top-0 z-[1200] flex flex-col justify-between items-start p-9 translate-x-[-100%]"
     >
       <div class="flex items-center justify-between w-full">
         <img
@@ -29,46 +30,47 @@
           class="w-[60px] cursor-pointer"
           alt=""
         />
-        <i id="navButtonClose"
+        <i
+          id="navButtonClose"
           class="ri-close-line text-[#f7f4f1] text-[2rem] font-light cursor-pointer"
         ></i>
       </div>
       <div class="flex flex-col items-start justify-start">
-        <p class=" menuItem">
+        <p mt-4 cllg:ass="menuItem">
           <span
-            class="text-[#F7F4F1] text-5xl !font-extralight subItem  p2 opacity-[0.8]"
+            class="text-[#F7F4F1] text-2xl md:text-5xl !font-extralight subItem p2 opacity-[0.8]"
           >
             Residences
           </span>
         </p>
         <div class="nav_menu_line bg-[#F7F4F1] w-[0] h-[1px]"></div>
-        <p class="mt-8 menuItem">
+        <p class="mt-4 lg:mt-8 menuItem">
           <span
-            class="text-[#F7F4F1] text-5xl !font-extralight  p2 subItem opacity-[0.8]"
+            class="text-[#F7F4F1] text-2xl md:text-5xl !font-extralight p2 subItem opacity-[0.8]"
           >
             Amenities
           </span>
         </p>
         <div class="nav_menu_line bg-[#F7F4F1] w-[0] h-[1px]"></div>
-        <p class="mt-8 menuItem">
+        <p class="mt-4 lg:mt-8 menuItem">
           <span
-            class="text-[#F7F4F1] text-5xl !font-extralight  p2 subItem opacity-[0.8]"
+            class="text-[#F7F4F1] text-2xl md:text-5xl !font-extralight p2 subItem opacity-[0.8]"
           >
             Location
           </span>
         </p>
         <div class="nav_menu_line bg-[#F7F4F1] w-[0] h-[1px]"></div>
-        <p class="mt-8 menuItem">
+        <p class="mt-4 lg:mt-8 menuItem">
           <span
-            class="text-[#F7F4F1] text-5xl !font-extralight  p2 subItem opacity-[0.8]"
+            class="text-[#F7F4F1] text-2xl md:text-5xl !font-extralight p2 subItem opacity-[0.8]"
           >
             Gallery
           </span>
         </p>
         <div class="nav_menu_line bg-[#F7F4F1] w-[0] h-[1px]"></div>
-        <p class="mt-8 menuItem">
+        <p class="mt-4 lg:mt-8 menuItem">
           <span
-            class="text-[#F7F4F1] text-5xl !font-extralight  p2 subItem opacity-[0.8]"
+            class="text-[#F7F4F1] text-2xl md:text-5xl !font-extralight p2 subItem opacity-[0.8]"
           >
             Contact
           </span>
@@ -77,53 +79,53 @@
       </div>
     </div>
     <!-- Loader -->
-    <!-- <div
+    <div
       class="fixed inset-0 flex items-center justify-center bg-white loader z-[2000]"
       id="loader-wrapper"
     >
       <div id="loader"></div>
-    </div> -->
-    <!-- <div
-      class="absolute top-0 flex flex-row items-center justify-center w-full overflow-hidden pt-4 z-[1000] bg-[#F7F4F1] p-8"
+    </div>
+    <div
+      class="absolute top-0 flex  items-center justify-end lg:justify-center w-full overflow-hidden pt-4 z-[1000] bg-[#F7F4F1] p-8 lg:flex-row flex-row-reverse"
     >
-      <div class="flex-1 header1">
+      <div class= " w-[10%] lg:w-[33%] header1">
         <i id="navButtonOpen"
           class="ri-menu-line text-[#F96339] p-1 border-2 border-[#F96339] text-xl font-light rounded hover:bg-[#F96339] hover:text-white transition-all ease-in-out duration-200 cursor-pointer"
         ></i>
         <span
-          class="text-[#F96339] font-bold text-[1rem] p2 uppercase text-left mb-2 ml-3"
+          class="text-[#F96339] font-bold text-[0.8rem] lg:text-[1rem] p2 uppercase text-left mb-2 ml-3 hidden lg:block "
           >NOW LEASING</span
         >
       </div>
-      <div class="flex justify-center flex-1">
-        <img src="./public/Images/logoT.svg" class="w-[200px]" alt="" />
+      <div class="flex justify-start lg:justify-center w-[590%] lg:w-[33%]">
+        <img src="./public/Images/logoT.svg" class="  w-[170px] lg:w-[200px]" alt="" />
       </div>
-      <div class="flex items-center justify-end flex-1">
+      <div class="hidden lg:flex items-center justify-end w-[50%] lg:w-[33%]">
         <p
-          class="text-[#F96339] font-bold text-[1rem] p2 uppercase text-left mb-2 ml-3 mr-5"
+          class="text-[#F96339] font-bold text-[0.9rem] xl:text-[1rem] p2 uppercase text-left mb-2 ml-3 mr-5"
         >
           415.727.4753
         </p>
         <div class="">
           <p
-            class="text-[#F96339] font-bold text-[1rem] p2 text-left mb-2 ml-3 my-0 py-0"
+            class="text-[#F96339] font-bold text-[0.9rem] xl:text-[1rem] p2 text-left mb-2 ml-3 my-0 py-0"
           >
             Schedule a Tour Today
           </p>
         </div>
       </div>
-    </div> -->
+    </div>
     <div
       id="hero"
-      class="h-screen w-full bg-[#F7F4F1] relative top-0 overflow-hidden mt-3"
+      class=" h-[90vh] md:h-screen w-full bg-[#F7F4F1] relative top-0 overflow-hidden mt-3"
     >
       <div
         class="h-full w-full z-[10] flex justify-center items-center flex-col absolute top-0"
       >
-        <h1 class="text-[#F96339] text-8xl italic font-light leading-snug">
+        <h1 class="text-[#F96339] text-5xl xm:text-5xl  sm:text-6xl md:text-8xl italic font-light leading-snug">
           Open Air.
         </h1>
-        <h1 class="text-[#F96339] text-8xl italic font-light leading-snug">
+        <h1 class="text-[#F96339] text-5xl xm:text-5xl sm:text-6xl md:text-8xl italic font-light leading-snug">
           Open Mind.
         </h1>
       </div>
@@ -131,55 +133,55 @@
         <img
           id="himg1"
           src="./public/Images/6628f0a8ed906aa70de8d566_TreasureIsland-0361_1800x1200.webp"
-          class="absolute imgh top-[20%] right-[15%] z-[21] w-[180px]  lg:w-[200px]"
+          class="absolute imgh top-[37%] xm:top-[24%] sm:top-[20%] right-[15%] z-[21] w-[7rem] xm:w-[9rem]  sm:w-[180px] lg:w-[200px]"
         />
         <img
           id="himg2"
           src="./public/Images/6628f088184fbbacf3648728_DB001_0025117_VIEW 02 - CO-WORKING SPACE_1_1800x1800.webp"
-          class="absolute imgh top-[3%] lg:top-[12%] right-[27%] z-[22] w-[354px] lg:w-[380px]"
+          class="absolute imgh top-[27%] xm:top-[3%] lg:top-[12%] right-[33%] sm:right-[27%] z-[22] w-[11rem] xm:w-[15rem] sm:w-[255px] md:w-[325px] lg:w-[380px]"
         />
         <img
           id="himg3"
           src="./public/Images/6650b4e8d6b78c6d32c0c3fb_2021-10-19_TIDG_TI_KR5_7955.webp"
-          class="absolute imgh top-[30%] right-[3%] lg:right-[13%] z-[23] w-[330px] lg:w-[330px]"
+          class="absolute imgh top-[41%] xm:top-[30%] right-[18%] sm:right-[9%] md:right-[3%] lg:right-[13%] z-[23] w-[9rem]  xm:w-[14rem] sm:w-[239px] md:w-[315px] lg:w-[330px]"
         />
         <img
           id="himg4"
           src="./public/Images/6628f0df7929bf37495cd719_TidalHouseViews_062823_Tower-West_03-High_2000x800.webp"
-          class="absolute imgh top-[61%] right-[11%] z-[24] w-[607px] lg:w-[793px] h-[200px]"
+          class="absolute imgh top-[50%] lg:top-[61%] right-[14%] sm:right-[11%] z-[24] w-[20rem] xm:w-[27rem] h-[auto] sm:w-[520px] md:w-[590px] lg:w-[793px]  sm:h-[160px] md:h-[200px]"
         />
         <img
           id="himg5"
           src="./public/Images/6628f05e5d10aa70347db0bd_HH014_0024043_VIEW_03_FINALLENS CORRECTION_1800x1425.webp"
-          class="absolute imgh top-[20%] left-[13%] lg:left-[18%] z-[25] w-[358px] lg:w-[500px]"
+          class="absolute imgh top-[36%] xm:top-[20%] left-[3%] xm:left-[13%] lg:left-[18%] z-[25] w-[10rem] xm:w-[15rem] sm:w-[255px] md:w-[325px] lg:w-[500px]"
         />
         <img
           id="himg6"
           src="./public/Images/6628f10e8c37d6f182e941c7_TreasureIsland-0948_1800x1200.webp"
-          class="absolute imgh top-[59%] left-[20%] z-[26] w-[278px] lg:w-[300px]"
+          class="absolute imgh top-[52%]  xm:top-[54%] sm:top-[51%] md:top-[47%] lg:top-[59%] left-[9%] xm:left-[20%] z-[26] w-[8rem] xm:w-[12rem] sm:w-[230px] md:w-[270px] lg:w-[300px]"
         />
         <img
           id="himg7"
           src="./public/Images/6628f0f984ce6a2b2c021229_TreasureIsland-0095_1800x2700.webp"
-          class="absolute imgh bottom-[-3%] xl:bottom-[-8%] left-[28%] z-[27] w-[125px] lg:w-[160px]"
+          class="absolute imgh bottom-[23%]  xm:bottom-[5%] xl:bottom-[-8%] left-[30%] xm:left-[28%] z-[27]  w-[65px] xm:w-[90px] md:w-[125px] lg:w-[160px]"
         />
       </div>
     </div>
-    <!-- <div
+    <div
       class="flex flex-col items-center justify-center w-full h-screen bg-white"
     >
-      <div class="w-[42rem] flex flex-col justify-center items-center gap-4">
+      <div class=" w-[86%] md:w-[42rem] flex flex-col justify-center items-center gap-4">
         <img
           src="./public/Images/Hlogo.svg"
           class="w-[3.75rem] text-[#003087] fadeup"
           alt=""
         />
         <h2
-          class="text-4xl font-thin text-center text-[#003087] leading-snug fadeup"
+          class=" text-3xl md:text-4xl font-thin text-center text-[#003087] leading-snug fadeup"
         >
           A New Sensibility For Urban Living Comes In With The Tide
         </h2>
-        <p class="text-[1.01rem] text-center p2 fadeup">
+        <p class=" text-[1rem] md:text-[1.01rem] text-center p2 fadeup">
           Isle House is an entirely new living experience that’s bringing
           together modern residences, designer amenities and an instant
           connection to the bay and outdoors. All in a unique island setting
@@ -209,14 +211,14 @@
           class="w-[80%] overflow-hidden border-t border-b border-[#F96339] flex flex-col justify-start items-start font-semibold p-0"
         >
           <div
-            class="w-full px-4 py-7 text-[#F96339] hover:text-[#fff] hover:bg-[#F96339] transition-all duration-300 ease-in-out flex cursor-pointer parent justify-between items-center"
+            class="w-full px-4 py-4 md:py-7 text-[#F96339] hover:text-[#fff] hover:bg-[#F96339] transition-all duration-300 ease-in-out flex cursor-pointer parent justify-between items-center"
           >
-            <h2 class="text-4xl">Residences</h2>
+              <h2 class="text-2xl md:text-3xl lg:text-4xl">Residences</h2>
             <h2>(01)</h2>
           </div>
           <div class="hidden w-full px-4 py-7 child">
             <p
-              class="text-[#F96339] text-[1.1rem] p2 font-normal mt-1 leading-snug mb-7"
+              class="text-[#F96339] text-[0.9rem] md:text-[1rem] lg:text-[1.1rem] p2 font-normal mt-1 leading-snug mb-3 md:mb-5 lg:mb-7"
             >
               Bright, layered and impeccably styled, this is a new take on
               California living. From studios to three-bedroom apartments and
@@ -229,14 +231,14 @@
           class="w-[80%] overflow-hidden border-b border-[#F96339] flex flex-col justify-start items-start font-semibold p-0"
         >
           <div
-            class="w-full px-4 py-7 text-[#F96339] hover:text-[#fff] hover:bg-[#F96339] transition-all duration-300 ease-in-out flex cursor-pointer parent justify-between items-center"
+            class="w-full px-4 py-4 md:py-7 text-[#F96339] hover:text-[#fff] hover:bg-[#F96339] transition-all duration-300 ease-in-out flex cursor-pointer parent justify-between items-center"
           >
-            <h2 class="text-4xl">Amenities</h2>
+              <h2 class="text-2xl md:text-3xl lg:text-4xl">Amenities</h2>
             <h2>(02)</h2>
           </div>
           <div class="hidden w-full px-4 child py-7">
             <p
-              class="text-[#F96339] text-[1.1rem] p2 font-normal mt-1 leading-snug mb-7"
+              class="text-[#F96339] text-[0.9rem] md:text-[1rem] lg:text-[1.1rem] p2 font-normal mt-1 leading-snug mb-3 md:mb-5 lg:mb-7"
             >
               Room to stretch out and breath. Isle House features inspired
               amenities like an open-air rooftop lounge, state-of-the-art
@@ -250,14 +252,14 @@
           class="w-[80%] overflow-hidden border-b border-[#F96339] flex flex-col justify-start items-start font-semibold p-0"
         >
           <div
-            class="w-full px-4 py-7 text-[#F96339] hover:text-[#fff] hover:bg-[#F96339] transition-all duration-300 ease-in-out flex cursor-pointer parent justify-between items-center"
+            class="w-full px-4 py-4 md:py-7 text-[#F96339] hover:text-[#fff] hover:bg-[#F96339] transition-all duration-300 ease-in-out flex cursor-pointer parent justify-between items-center"
           >
-            <h2 class="text-4xl">Location</h2>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl">Location</h2>
             <h2>(03)</h2>
           </div>
           <div class="hidden w-full px-4 child py-7">
             <p
-              class="text-[#F96339] text-[1.1rem] p2 font-normal mt-1 leading-snug mb-7"
+              class="text-[#F96339] text-[0.9rem] md:text-[1rem] lg:text-[1.1rem] p2 font-normal mt-1 leading-snug mb-3 md:mb-5 lg:mb-7"
             >
               Treasure Island is a one-of-a-kind location that offers residents
               a tranquil natural escape that is still just minutes from downtown
@@ -292,9 +294,9 @@
           alt=""
         />
       </div>
-      <div class="absolute flex flex-row items-end justify-end w-full h-full">
+      <div class="absolute flex flex-row items-center justify-center w-full h-full lg:items-end lg:justify-end">
         <div
-          class="bg-[#F7F4F1] w-[20rem] h-[10rem] mr-8 mb-8 flex flex-col justify-center items-start p-9"
+          class="bg-[#F7F4F1] w-[20rem] h-[10rem] mr-8 mb-8 flex flex-col justify-center items-start p-6 md:p-7 lg:p-9"
         >
           <h3
             class="text-[#F96339] font-bold text-[0.75rem] p2 uppercase text-left mb-2"
@@ -316,18 +318,18 @@
           </p>
         </div>
       </div>
-      <div class="absolute top-1/2 wrapper">
+      <div class="absolute top-[7%] lg:top-1/2 wrapper">
         <div class="marquee">
-          <p class="text-white text-8xl">The Commute —</p>
-          <p class="text-white text-8xl">The Commute —</p>
-          <p class="text-white text-8xl">The Commute —</p>
-          <p class="text-white text-8xl">The Commute —</p>
-          <p class="text-white text-8xl">The Commute —</p>
-          <p class="text-white text-8xl">The Commute —</p>
+          <p class="text-6xl text-white md:text-7xl lg:text-8xl">The Commute —</p>
+          <p class="text-6xl text-white md:text-7xl lg:text-8xl">The Commute —</p>
+          <p class="text-6xl text-white md:text-7xl lg:text-8xl">The Commute —</p>
+          <p class="text-6xl text-white md:text-7xl lg:text-8xl">The Commute —</p>
+          <p class="text-6xl text-white md:text-7xl lg:text-8xl">The Commute —</p>
+          <p class="text-6xl text-white md:text-7xl lg:text-8xl">The Commute —</p>
         </div>
       </div>
     </div>
-    <div class="relative flex items-center justify-center w-full h-screen">
+    <div class="relative flex items-center justify-center w-full  h-[50vh] lg:h-screen">
       <div
         id="dot"
         class="w-[20px] h-[20px] z-[500] bg-white rounded-full cursor-pointer absolute top-[46%] left-[41%]"
@@ -470,7 +472,7 @@
           </p>
         </div>
       </div>
-    </div> -->
+    </div>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -484,5 +486,5 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
-  <!-- <script src="./src/script.js"></script> -->
+  <script src="./src/script.js"></script>
 </html>
